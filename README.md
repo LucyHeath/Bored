@@ -1,5 +1,4 @@
 # Bored? - GA Project Two - 1.5 days
-BORED? - GA Project Two
 
 ## Description
 
