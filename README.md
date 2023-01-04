@@ -7,8 +7,7 @@ In a world filled with” doom scrolling”  Bored? is a website that seeks to i
 
 ## Deployment link
 
-Bored? was deployed with Netlify and can be experienced [here](https://bit.ly/Bored_
-
+Bored? was deployed with Netlify and can be experienced [here](https://bit.ly/Bored_)
 ## Getting Started/Code Installation
 
 Clone or download the Github repo. Open it in the editor of your choice and run yarn in your terminal to install all dependencies. Add Axios with yarn add axios command, then start the server with yarn start. 
