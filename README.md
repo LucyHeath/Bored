@@ -11,7 +11,7 @@ Bored? was deployed with Netlify and can be experienced [here](https://bit.ly/Bo
 Clone or download the Github repo. Open it in the editor of your choice and run `yarn` in your terminal to install all dependencies. Add Axios with Yarn `add axios` command, then start the server with `yarn start`. 
 
 ## Timeframe & Working Team 
-I created this website for General Assembly's project two, along with my other team members Imra Skaliks and Margherita Varosio. We were given 48 hours to build a website using REACT and a third party public API.
+I created this website for General Assembly's project two, along with my other team members Imra Skaliks and Margherita Varosio. We were given 1.5 days to build a website using React.js and a third party public API.
 
 ## Brief
 * Consume a public API. This could be anything but it must make sense for your project.
@@ -32,7 +32,7 @@ I created this website for General Assembly's project two, along with my other t
 ![Screenshot 2023-01-05 at 18 21 01](https://user-images.githubusercontent.com/114397080/210852478-318d32b3-8f4c-4b05-bf67-7ba49b6beec1.png)
 
 ## Technologies Used
-* REACT
+* React.js
 * HTML5
 * Sass
 * CSS
@@ -42,7 +42,7 @@ I created this website for General Assembly's project two, along with my other t
 * Yarn
 * Insomnia
 * Git and GitHub
-* VS Code
+* VSCode
 * Netlify
 
 ## Planning
@@ -77,15 +77,14 @@ The homepage is a simple eyecatching call to to the user. It uses `Link` from Re
 
 Here we set the activity `choice` object, which contains the `type`(category) and `activity` (description) keys, to state.
 
-The `handeGetChoice` function is set to `useCallback` so the component will not re-render unless the `choice` changes.
-and the API request is made within the `useEffect` for the choice data when `handleGetChoice ` is called. The `useLocation` object will update each time the URL changes, and makes an API call to the `choice` that is currently held in state `location.state.choice.type`. 
+The `handeGetChoice` function is set to `useCallback` so the component will not re-render unless the `choice` changes and the API request is made within the `useEffect` when `handleGetChoice ` is called. The `useLocation` object will update each time the URL changes, and makes an API call to the `choice` that is currently held in state `location.state.choice.type`. 
 
 ![Screenshot 2023-01-05 at 19 28 55](https://user-images.githubusercontent.com/114397080/210864178-2d183935-0d2f-46fa-83f9-2698c3a81858.png)
 
 “Try again” button makes another call to the API endpoint to show another random enpoint of the same `choice` currently held in state . “Back to Activities” uses a button as a `Link` to navigate back to the main activity menu.
 
 ### Activity index page
-We saved activity categories and images in the `choiceArray` as the a "show all" endpoint was, infortunatley, not available in our chosen API. 
+We saved activity categories and images in the `choiceArray` as the no "show all" endpoint was available in our chosen API. 
 
 We used `useNavigate` in the `navigateToChoice` function, in which params have been set as the `choice` currently held in state, onClick.
 If the user clicks the "Suprise Me" button instead, the `getRandomChoice` function is called which randomises a `choice` , saves it to `randomChoice` and uses the `navigateToChoice` function to navigate to it.
