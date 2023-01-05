@@ -8,7 +8,7 @@ In a world filled with ”doom scrolling”, Bored? is a website that seeks to i
 Bored? was deployed with Netlify and can be experienced [here](https://bit.ly/Bored_).
 
 ## Getting Started/Code Installation
-Clone or download the Github repo. Open it in the editor of your choice and run yarn in your terminal to install all dependencies. Add Axios with yarn add axios command, then start the server with yarn start. 
+Clone or download the Github repo. Open it in the editor of your choice and run `yarn` in your terminal to install all dependencies. Add Axios with yarn `add axios` command, then start the server with `yarn start`. 
 
 ## Timeframe & Working Team 
 I created this website for General Assembly's project two, along with my other team members Imra Skaliks and Margherita Varosio. We were given 48 hours to build a website using REACT and a third party public API.
@@ -119,7 +119,6 @@ This was achieved with a combination of Bootstrap and Sass.
 * I learned about and used useNavigate, useLocation, and useCallback.
 * I worked with Bootstrap and SASS for the first time.
 * I deployed a site for the first time using Netlify. 
-
 
 ## Future Improvements
 * With more time I would have liked to make use of some of the other data returned by the API. 
