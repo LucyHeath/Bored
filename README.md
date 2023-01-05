@@ -47,7 +47,7 @@ I created this website for General Assembly's project two, along with my other t
 
 ## Planning
 This was a group project but on a very short timescale, in order to optimize the learning opportunity from other colleagues we decided to work together from start to finish. I did the coding and made regular commits to Github, and at completion my colleagues forked from this. 
-We used [Trello](https://trello.com/) to keep track of our TODO list.
+We made a brief plan of priorities and what must be done to meet the project breif, and other functionality that could be achieved with additional time We used [Trello](https://trello.com/) to keep track of our TODO list.
 
 ### Finding an API
 We searched the web looking for a clean and easy to use API. The [Bored API](https://www.boredapi.com/documentation#endpoints-participants) returns a single object at random when called. Endpoints can be filtered by any of the keys, for example by activity;
@@ -58,8 +58,8 @@ We searched the web looking for a clean and easy to use API. The [Bored API](htt
 We used [Excalidraw](https://excalidraw.com/) to sketch out how the website would look and function, and define the user journey.
 ![Screenshot 2023-01-05 at 18 27 05](https://user-images.githubusercontent.com/114397080/210853606-579be761-9556-4a95-b5f0-7a4c4de1c3f7.png)
 
-### Project Plan and Pseudocode
-We made a brief plan of priorities and what must be done to meet the minimum viable product, and other functionality that could be achieved with additional time.We used pseudocode to work out the logic and framework for our code. 
+### Pseudocode
+We used pseudocode to work out the logic and framework for our code. 
 
 ## Build/Code Process
 
@@ -67,7 +67,6 @@ We made a brief plan of priorities and what must be done to meet the minimum via
 Using useEffect to bring in the data from the  API with useCallback. Location variable and handleGetChoice function used in dependency array so data retrieved when user makes choice from the activity index.
 
 Using choice type to extract data for each category
-
 
 Choice object set to state. Object containing available categories and images assigned. 
 Using navigate to go navigate to choice, depending on state.
@@ -89,7 +88,7 @@ This was achieved with a combination of Bootstrap and Sass.
 * I would have liked to rename the Busywork category, however due to how we used the activity keys in our site, we had to keep the key name as it was written in the database. 
 
 ## Wins
-* We had a great working dynamic and worked effectively as a team.We initially had a very strong idea involving a different API, but after discussion and some initial planning we came to the decision that we wouldn't be able to achieve a desired endpoint within the allocated time scale.I think it is to our credit that as a group we recognised this and were able to be dynamic and change our plan to  a more realistic goal.
+* We had a great working dynamic and worked effectively as a team. We initially had a very strong idea involving a different API, but after discussion and some initial planning we came to the decision that we wouldn't be able to achieve a desired endpoint within the allocated time scale.I think it is to our credit that as a group we recognised this and were able to be dynamic and change our plan to a more realistic goal.
 * I found working with others a good learning experience. Everyone brought something different to the project and it was helpful to be able to share knowledge, and I found talking through ideas solidified my own understanding. 
 * I took on the role of coding and presenter at the end of the project. Writing the code was excellent practice and helped me solidify knowledge. I felt I was able to draw the team members' ideas together well. 
 * I feel we kept the user story simple and well defined.
