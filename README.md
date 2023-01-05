@@ -70,35 +70,30 @@ The router was the first part of the code we set up and detailed our endpoints a
 ![Screenshot 2023-01-05 at 18 42 02](https://user-images.githubusercontent.com/114397080/210856303-bba8f844-9c9f-4ab1-9d00-b03f60818bdc.png)
 
 ### Homepage
-The homepage is a simple eyecatching with a call to action to the user to click through. It uses `Link` from React-router-dom and `Col` and `Button` components from Bootstrap. 
+The homepage is a simple eyecatching call to to the user. It uses `Link` from React-router-dom and `Col` and `Button` components from Bootstrap. 
 
 ![Screenshot 2023-01-05 at 18 38 03](https://user-images.githubusercontent.com/114397080/210855516-e61074e0-b0ab-4240-ad8b-f8068bbc9789.png)
 ### Single activity page
 
-We use `useEffect` to bring in the data from the  API with `useCallback`. Location variable and `handleGetChoice` function used in dependency array so data retrieved when user makes choice from the activity index.
+Here we set the activity `choice` object, which contains the `type`(category) and `activity` (description) keys, to state.
 
-Using choice type to extract data for each category
+The `handeGetChoice` function is set to `useCallback` so the component will not re-render unless the `choice` changes.
+and the API request is made within the `useEffect` for the choice data when `handleGetChoice ` is called. The `useLocation` object will update each time the URL changes, and makes an API call to the `choice` that is currently held in state `location.state.choice.type`. 
 
-Choice object set to state. Object containing available categories and images assigned. 
-Using navigate to go navigate to choice, depending on state.
+![Screenshot 2023-01-05 at 19 28 55](https://user-images.githubusercontent.com/114397080/210864178-2d183935-0d2f-46fa-83f9-2698c3a81858.png)
 
-Single activity page buttons
-
-“Try again” makes another call to the API to show another random activity within the category previously selected via the menu. “Back to Activities” uses a button as a link to navigate back to the activity menu( choice index).
+“Try again” button makes another call to the API endpoint to show another random enpoint of the same `choice` currently held in state . “Back to Activities” uses a button as a `Link` to navigate back to the main activity menu.
 
 ### Activity index page
-We saved activity categories and images in the `choiceArray` as the endpoint to show all categores was not available in our chosen API. 
+We saved activity categories and images in the `choiceArray` as the a "show all" endpoint was, infortunatley, not available in our chosen API. 
 
-We used `useNavigate` in the `navigateToChoice` function, whcih navigated throug to the choice which has been selected and is held in state, onClick.
-If the user clicks the "Suprise Me" button instead, the `getRandomChoice` function is called, which also calls the `navigateToChoice` function, with  randomChoice passed into it, navigating to whichever randomChoice has been assigned. 
+We used `useNavigate` in the `navigateToChoice` function, in which params have been set as the `choice` currently held in state, onClick.
+If the user clicks the "Suprise Me" button instead, the `getRandomChoice` function is called which randomises a `choice` , saves it to `randomChoice` and uses the `navigateToChoice` function to navigate to it.
 
 ![Screenshot 2023-01-05 at 18 46 20](https://user-images.githubusercontent.com/114397080/210857095-b28df5de-76db-44f6-b00d-fc3140546ab0.png)
 
 In the return we map the choices in the `choicesArray` and display the data from the API call made on the single activity page.
 ![Screenshot 2023-01-05 at 18 50 04](https://user-images.githubusercontent.com/114397080/210857737-83a7e4c5-83cd-4675-9d2f-c1ad49249262.png)
-
-
-
 
 ### Styling
 This was achieved with a combination of Bootstrap and Sass.
