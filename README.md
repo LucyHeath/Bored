@@ -2,7 +2,7 @@
 ![Activity index page](https://user-images.githubusercontent.com/114397080/210851353-49fa248c-0536-4fb2-a905-ff1168eea3bf.png)
 
 ## Description
-In a world filled with ”doom scrolling”, Bored? is a website that seeks to inspire the user with ideas about how they could fill their time in meaningful and productive ways! On entering the site, they are presented with a homepage, and click through to a menu of activity categories. On selecting their chosen activity, the user is suggested an activity they could try within this category. This is randomly generated, and the user can select  “Try again” to have another suggestion delivered to them within that same category. Alternatively, if the user is feeling adventurous, they can  select the “Surprise Me!” category, which will return a random activity of any category. 
+In a world filled with ”doom scrolling”, Bored? is a website that seeks to inspire the user with ideas about how they could fill their time in meaningful and productive ways! On entering the site they are presented with a homepage, and click through to a menu of activity categories. On selecting their chosen activity the user is suggested an activity they could try within this category. This is randomly generated, and the user can select  “Try again” to have another suggestion delivered to them within that same category. Alternatively, if the user is feeling adventurous they can  select the “Surprise Me!” category, which will return a random activity of any category. 
 
 ## Deployment link
 Bored? was deployed with Netlify and can be experienced [here](https://bit.ly/Bored_).
