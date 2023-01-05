@@ -18,7 +18,7 @@ I created this website for General Assembly's project two, along with my other t
 * Have several components
 * The app can have a router with several "pages", this is up to you and if it makes sense for your project.
 * Include wireframes that you designed before building the app.
-* Be deployed online** and accessible to the public (hosted on your public github, not GA github!).
+* Be deployed online and accessible to the public (hosted on your public github).
 
 ## Features
 ![Screenshot 2023-01-05 at 18 13 39](https://user-images.githubusercontent.com/114397080/210851133-e69b072a-b77d-4b42-9030-7b12bf9aa0a1.png)
