@@ -63,8 +63,19 @@ We used pseudocode to work out the logic and framework for our code.
 
 ## Build/Code Process
 
-### Bringing in the API 
-Using useEffect to bring in the data from the  API with useCallback. Location variable and handleGetChoice function used in dependency array so data retrieved when user makes choice from the activity index.
+### App.js
+
+The router was the first part of the code we set up and detailed our endpoints and embedded our page components
+
+![Screenshot 2023-01-05 at 18 42 02](https://user-images.githubusercontent.com/114397080/210856303-bba8f844-9c9f-4ab1-9d00-b03f60818bdc.png)
+
+### Homepage
+The homepage is a simple eyecatching with a call to action to the user to click through. It uses `Link` from React-router-dom and `Col` and `Button` components from Bootstrap. 
+
+![Screenshot 2023-01-05 at 18 38 03](https://user-images.githubusercontent.com/114397080/210855516-e61074e0-b0ab-4240-ad8b-f8068bbc9789.png)
+### Single activity page
+
+We use `useEffect` to bring in the data from the  API with `useCallback`. Location variable and `handleGetChoice` function used in dependency array so data retrieved when user makes choice from the activity index.
 
 Using choice type to extract data for each category
 
@@ -75,7 +86,19 @@ Single activity page buttons
 
 “Try again” makes another call to the API to show another random activity within the category previously selected via the menu. “Back to Activities” uses a button as a link to navigate back to the activity menu( choice index).
 
-“Surprise Me!” random choice function
+### Activity index page
+We saved activity categories and images in the `choiceArray` as the endpoint to show all categores was not available in our chosen API. 
+
+We used `useNavigate` in the `navigateToChoice` function, whcih navigated throug to the choice which has been selected and is held in state, onClick.
+If the user clicks the "Suprise Me" button instead, the `getRandomChoice` function is called, which also calls the `navigateToChoice` function, with  randomChoice passed into it, navigating to whichever randomChoice has been assigned. 
+
+![Screenshot 2023-01-05 at 18 46 20](https://user-images.githubusercontent.com/114397080/210857095-b28df5de-76db-44f6-b00d-fc3140546ab0.png)
+
+In the return we map the choices in the `choicesArray` and display the data from the API call made on the single activity page.
+![Screenshot 2023-01-05 at 18 50 04](https://user-images.githubusercontent.com/114397080/210857737-83a7e4c5-83cd-4675-9d2f-c1ad49249262.png)
+
+
+
 
 ### Styling
 This was achieved with a combination of Bootstrap and Sass.
