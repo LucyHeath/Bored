@@ -26,7 +26,7 @@ I created this website for General Assembly's project two, along with my other t
 * A homepage that is simple, and centered on a striking Gif “stop scrolling, start doing”, which sets the scene for the user.
 * A navbar that redirects the user to the homepage and activity page from anywhere on the site.
 * An activity menu which seeks to inspire the user about how they can fill their time using strong visuals.
-* The “Suprise Me!” button to generate a random activity of any category.
+* The “Surprise Me!” button to generate a random activity of any category.
 * A single activity page which displays the randomly generated activity suggestion. Further random suggestions within the category can be obtained using the “Try again” button.
 
 ![Screenshot 2023-01-05 at 18 21 01](https://user-images.githubusercontent.com/114397080/210852478-318d32b3-8f4c-4b05-bf67-7ba49b6beec1.png)
@@ -47,7 +47,7 @@ I created this website for General Assembly's project two, along with my other t
 
 ## Planning
 This was a group project but on a very short timescale, in order to optimize the learning opportunity from other colleagues we decided to work together from start to finish. I did the coding and made regular commits to Github, and at completion my colleagues forked from this. 
-We made a brief plan of priorities and what must be done to meet the project breif, and other functionality that could be achieved with additional time We used [Trello](https://trello.com/) to keep track of our TODO list.
+We made a breif plan of priorities and what must be done to meet the project breif, and other functionality that could be achieved with additional time We used [Trello](https://trello.com/) to keep track of our TODO list.
 
 ### Finding an API
 We searched the web looking for a clean and easy to use API. The [Bored API](https://www.boredapi.com/documentation#endpoints-participants) returns a single object at random when called. Endpoints can be filtered by any of the keys, for example by activity;
@@ -81,13 +81,13 @@ The `handeGetChoice` function is set to `useCallback` so the component will not 
 
 ![Screenshot 2023-01-05 at 19 28 55](https://user-images.githubusercontent.com/114397080/210864178-2d183935-0d2f-46fa-83f9-2698c3a81858.png)
 
-“Try again” button makes another call to the API endpoint to show another random enpoint of the same `choice` currently held in state . “Back to Activities” uses a button as a `Link` to navigate back to the main activity menu.
+“Try again” button makes another call to the API endpoint to show another random endpoint of the same `choice` currently held in state . “Back to Activities” uses a button as a `Link` to navigate back to the main activity menu.
 
 ### Activity index page
 We saved activity categories and images in the `choiceArray` as the no "show all" endpoint was available in our chosen API. 
 
 We used `useNavigate` in the `navigateToChoice` function, in which params have been set as the `choice` currently held in state, onClick.
-If the user clicks the "Suprise Me" button instead, the `getRandomChoice` function is called which randomises a `choice` , saves it to `randomChoice` and uses the `navigateToChoice` function to navigate to it.
+If the user clicks the "Surprise Me" button instead, the `getRandomChoice` function is called which randomises a `choice` , saves it to `randomChoice` and uses the `navigateToChoice` function to navigate to it.
 
 ![Screenshot 2023-01-05 at 18 46 20](https://user-images.githubusercontent.com/114397080/210857095-b28df5de-76db-44f6-b00d-fc3140546ab0.png)
 
@@ -114,7 +114,7 @@ This was achieved with a combination of Bootstrap and Sass.
 
 ## Key Learning Points
 * I became much more comfortable with navigating and accessing data returned from an API.
-* I was able to practice using REACT, and have subsequently developed a far greater understanding of this, and when to implement useState and useEffect.
+* I was able to practise using React, and have subsequently developed a far greater understanding of this, and when to implement useState and useEffect.
 * I learned about and used useNavigate, useLocation, and useCallback.
 * I worked with Bootstrap and SASS for the first time.
 * I deployed a site for the first time using Netlify. 
